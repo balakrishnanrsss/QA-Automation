@@ -70,7 +70,7 @@ export class TutorialDetailsComponent implements OnInit {
       .subscribe({
         next: (res) => {
           console.log(res);
-          this.message = res.message ? res.message : 'This tutorial was updated successfully!';
+          this.message = res.message ? res.message : 'This Product was updated successfully!';
         },
         error: (e) => console.error(e)
       });
@@ -81,7 +81,7 @@ export class TutorialDetailsComponent implements OnInit {
       .subscribe({
         next: (res) => {
           console.log(res);
-          this.router.navigate(['/tutorials']);
+          this.router.navigate(['/products']);
         },
         error: (e) => console.error(e)
       });
